@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Domestic and International Flights at the Lowest Airfare</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header-logo">
+          <a href="index.html" target="_self">
+            <img
+              src="https://www.goindigo.in/content/dam/s6web/in/en/assets/logo/IndiGo_logo_2x.png"
+              alt="IndiGo logo."
+            />
+          </a>
+          <a href="#main">Skip to Main Content</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">Book</a></li>
+            <li><a href="">Trips</a></li>
+            <li><a href="">6E Rewards</a></li>
+            <li><a href="">Check-in</a></li>
+            <li><a href="">Loyalty</a></li>
+          </ul>
+        </nav>
+        <div class="header-login">
+          <button>Login</button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="tagline">
+        <h1>Hi there, where would you like to <span>IndiGo</span> today?</h1>
+      </div>
+      <div class="display-errors"></div>
+      <div class="booking-form" aria-label="Booking Form.">
+        <fieldset
+          aria-label="Book a flight or book a hotel."
+          style="border: none"
+        >
+          <div class="tabs" aria-label="Booking tabs">
+            <button class="tablinks active">Book a flight</button>
+            <button class="tablinks">Book a hotel</button>
+          </div>
+        </fieldset>
+        <form id="booking-form">
+          <div class="form-content">
+            <fieldset aria-label="Trip type." style="border: none">
+              <div class="trip-type">
+                <label>
+                  <input type="radio" name="trip" value="one-way" checked /> One
+                  Way
+                </label>
+                <label>
+                  <input type="radio" name="trip" value="round-trip" /> Round
+                  Trip
+                </label>
+                <label>
+                  <input type="radio" name="trip" value="multi-city" /> Multi
+                  City
+                </label>
+              </div>
+            </fieldset>
+            <div class="form-inputs">
+              <label for="from" id="from" style="display: none">From</label>
+              <input type="text" id="from-input" placeholder="From" />
+              <label for="to" id="to" style="display: none">To</label>
+              <input type="text" id="to-input" placeholder="To" />
+              <label for="departure" id="departure" style="display: none"
+                >Departure Date</label
+              >
+              <input
+                type="date"
+                id="departure-input"
+                aria-labelledby="departure"
+              />
+              <label for="return" id="return" style="display: none"
+                >Return Date</label
+              >
+              <input type="date" id="return-input" aria-labelledby="return" />
+              <label
+                for="travellers"
+                id="travellers"
+                style="display: none"
+              ></label>
+              <input
+                type="text"
+                id="special-fares-input"
+                placeholder="Travellers + Special Fares"
+              />
+            </div>
+            <div class="third-row">
+              <div class="travelling-for">
+                <label for="travelling-for">I am travelling for</label>
+                <select id="travelling-for" aria-label="Travelling For">
+                  <option value="" selected>...........</option>
+                  <option value="leisure">Leisure</option>
+                  <option value="work">Work</option>
+                  <option value="medical">Medical</option>
+                </select>
+              </div>
+              <div class="promo-code">
+                <a href="#" id="add-promocode-link">+ADD PROMOCODE</a>
+              </div>
+              <div
+                id="promocode-modal"
+                class="modal"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="promocode-modal-title"
+                tabindex="-1"
+              >
+                <div class="modal-content">
+                  <h2 id="promocode-modal-title">Enter Promocode</h2>
+                  <input
+                    type="text"
+                    id="promocode-input"
+                    placeholder="Enter promocode"
+                    aria-label="Promocode Input"
+                  />
+                  <button id="apply-promocode" class="modal-button">
+                    Apply
+                  </button>
+                  <button id="cancel-promocode" class="modal-button">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+              <button class="search" id="search-button">Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="accordion-menu">
+        <h2>Accordion Menu</h2>
+        <button aria-expanded="false" aria-controls="menu1">Menu 1</button>
+        <ul id="menu1">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <button aria-expanded="false" aria-controls="menu2">Menu 2</button>
+        <ul id="menu2">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <button aria-expanded="false" aria-controls="menu3">Menu 3</button>
+        <ul id="menu3">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+      <div class="page2">
+        <a href="page2.html" target="_blank"
+          >Click here to go to the 2nd page</a
+        >
+      </div>
+    </main>
+  </body>
+</html>

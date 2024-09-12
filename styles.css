@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+}
+*:focus{
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+body{
+    background-image: url('https:\2f\2fwww.goindigo.in\2f content\2f dam\2fs6web\2fin\2f en\2f assets\2fsplash-screen-img.png');
+    background-repeat: no-repeat;  
+    background-size: 100vw 100vh; 
+    background-position: top center;  
+    background-attachment: fixed; 
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em 4em;
+    background-color: rgba(248, 251, 255,0.5);
+    font-family: 'Open Sans',sans-serif;
+}
+
+.header:hover{
+    background-color: rgb(248, 251, 255);
+}
+
+.header-logo img {
+    width: 8em;
+}
+
+.header-logo a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5em;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    color: #00254f;
+    cursor: pointer;
+}
+
+nav li span:nth-child(2) {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000099;
+}
+
+
+.header-login button {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    color: #00254f;
+    background-color: #f0f4f8;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.header-login button span {
+    margin-left: 5px;
+    font-size: 12px;
+}
+h1{
+    font-family: 'Open Sans',sans-serif;
+    display: block;
+    padding: 1em 0;
+    margin-left:2em;
+
+}
+.tagline span{
+    color: green;
+}
+
+.booking-form {
+    font-family: 'Open Sans',sans-serif;
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    background-color: #eff2f4a3;
+    color: #4b5772;
+    border: none;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    transition: background-color 0.3s, color 0.3s;
+    width: 50%;
+}
+
+.tabs button.active {
+    background-color: #000099;
+    color: white;
+    font-weight: 700;
+    width: 50%;
+    border-top-left-radius: 10px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trip-type {
+    display: flex;
+    gap: 10px;
+    padding: 0 2rem;
+}
+.form-inputs {
+    display: flex;
+    margin: auto;
+}
+
+.form-inputs input {
+    padding: 2.5rem;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+}
+
+.third-row {
+    display: inline-block;
+    padding: 0 2rem;
+}
+.promo-code{
+    display: inline-block;
+}
+.promo-code a {
+    text-decoration: underline #000099;
+    color: #000099;
+}
+.search {
+    background-color: #000099;
+    color: white;
+    border: none;
+    border-radius: 1.25rem;
+    width: 100px;
+    padding:10px;
+    margin-left: 50rem;
+}
+.search:hover{
+    cursor: pointer;
+}
+.travelling-for {
+    font-size: 15px;
+}
+.travelling-for select{
+    font-size: 15px;
+}
+.display-errors{
+    margin-left: 70px;
+    padding-bottom: 10px;
+}
+
+.accordion-menu {
+    margin:0 3rem;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(248, 251, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
+.accordion-menu h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.accordion-menu button {
+    display: block;
+    background-color: #eff2f4a3;
+    color: #00254f;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion-menu button:hover,
+.accordion-menu button:focus {
+    background-color: #dce5f0;
+    color: #000099; /* changes text color on hover/focus */
+}
+
+.accordion-menu button[aria-expanded="true"] {
+    background-color: #000099; /* active button color */
+    color: white; /* active button text color */
+    border-bottom: 2px solid #000099; 
+}
+
+.accordion-menu ul {
+    display: none; /* hides ul initially */
+    list-style-type: none; /* remove default list styling */
+    padding-left: 0;
+    margin: 0;
+}
+
+.accordion-menu ul li {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #eff2f4a3;
+}
+
+.accordion-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.modal {
+    display: none; /*hidden at first*/
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* enable scroll if needed */
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+  }
+  .modal-button {
+    background-color: #000099;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .modal-button:hover {
+    background-color: #0056b3;
+  }
+
+.page2{
+    margin-left: 3rem;
+    padding: 2rem 0;
+    font-size: 20px;
+}
